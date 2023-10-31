@@ -45,11 +45,24 @@
   #navbar:hover {
     color: #7a7a7a;
   }
-  
-  #navbar a.active {
-    border-bottom: 1px solid #ffffff;
+ 
+
+  .nav-item, .nav-link {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    padding: 0.3em;
+    text-shadow: 1px 1px #ff0303;
   }
-  
+
+  .nav-item:hover ,.nav-link :hover {
+    border-radius: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+
+
+  }
+ 
   .navbar-brand {
     display: flex;
   }
@@ -73,7 +86,7 @@
   }
   
   #navbar-items .nav-item {
-    margin: 0 1em;
+    margin: 0 0.1em;
   }
   
 
@@ -131,18 +144,23 @@
   /* mini-banners */
   
   #mini-banners {
-    margin-bottom: 2em;
+    align-items: center;
+    margin-bottom: 5em;
   }
   
   #mini-banners .card {
-    border-radius: 0;
-    height: 400px;
-    margin-bottom: 1em;
-    padding: 2em 0.3em;
+    border: 10px 10px #532b2b;
+    width: 300px;
+    padding-top: 2em;
+    height: 300px;
   }
   
+  .card-body {
+    box-shadow: 1em 1em #532b2b37;
+}
+
   #mini-banners i {
-    font-size: 4em;
+    font-size: 5em;
   }
   
   #mini-banners .card-title {
@@ -191,12 +209,28 @@
     width: 75px;
   }
   
+  .info-celeb {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding-bottom: 3em;
+    padding-top: 1.5em;
+  }
+
+  .info-celeb img{
+    width: 400px;
+
+  }
+  .info-celeb p {
+    margin-top: 30px;
+    width: 400px;
+  }
+
   #featured-images {
     margin-top: 2em;
     margin-bottom: 2em;
   }
-  
-  
+
   
   
   #featured-images .banner-content {
@@ -236,6 +270,33 @@
   .contatos p a {
     text-decoration: none;
     color: #382929da;
+  }
+
+  /* agenda */
+  
+  #agenda {
+    display: flex;
+    flex-direction: column
+  }
+  
+  #agenda .ft-agenda {
+    width: 600px;
+
+  }
+
+  #agenda .ft-agenda:hover {
+    cursor: pointer;
+  }
+
+  /* blog */
+
+  #blog img {
+    width: 200px;
+    padding-bottom: 1em;
+  }
+
+  #blog .card-body {
+    box-shadow: 0.2em 0.2em  #532b2b37;
   }
   
   /* rodape-top*/
